@@ -1,1 +1,1 @@
-Icon Library。
+Icon Library
