@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Worklibrary Icon Library" />
+  <title>Worklibrary Icons</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="图标分类">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">W</div>
+        <div>
+          <strong>Worklibrary</strong>
+          <span>Icon Library</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">分类</div>
+        <nav id="categoryList" class="category-list"></nav>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Design Assets</p>
+          <h1>Icons</h1>
+          <p id="resultSummary" class="result-summary">正在读取图标…</p>
+        </div>
+
+        <label class="search-box" for="searchInput">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m21 21-4.35-4.35m1.35-5.15A6.5 6.5 0 1 1 5 11.5a6.5 6.5 0 0 1 13 0Z" />
+          </svg>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="搜索图标，例如 search、arrow…"
+            autocomplete="off"
+          />
+          <kbd>/</kbd>
+        </label>
+      </header>
+
+      <section>
+        <div id="iconGrid" class="icon-grid" aria-live="polite"></div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <div class="empty-symbol">⌕</div>
+          <h2>没有找到图标</h2>
+          <p>换一个关键词或分类试试。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span class="toast-check">✓</span>
+    <span id="toastText">已复制 CSS</span>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
