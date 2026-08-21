@@ -11,6 +11,10 @@ await fs.mkdir(DIST_DIR, { recursive: true });
 
 await copyDir(SRC_DIR, DIST_DIR);
 await copyDir(ICONS_DIR, path.join(DIST_DIR, "icons"));
+await copyDir(
+  path.join(ROOT, "1v1pro-showcase"),
+  path.join(DIST_DIR, "1v1pro-showcase")
+);
 
 const iconFiles = await walk(ICONS_DIR);
 
