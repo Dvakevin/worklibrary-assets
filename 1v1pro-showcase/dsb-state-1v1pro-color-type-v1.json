@@ -1,0 +1,79 @@
+{
+  "runId": "1v1pro-color-type-v1",
+  "fileKey": "sTkv1QdBS4VvstmsMGL7uN",
+  "phase": "complete",
+  "step": "homepage-dark-audit-light-theme-qa",
+  "entities": {
+    "collections": {
+      "colorPrimitives": "VariableCollectionId:16:418",
+      "color": "VariableCollectionId:16:419"
+    },
+    "variables": {
+      "primitiveCount": 37,
+      "semanticCount": 32,
+      "textOpacityPrimitives": {
+        "whiteAlpha100": "VariableID:26:432",
+        "whiteAlpha68": "VariableID:26:433",
+        "whiteAlpha48": "VariableID:26:434",
+        "whiteAlpha28": "VariableID:26:435"
+      },
+      "textDisabled": "VariableID:26:436",
+      "lightTextOpacityPrimitives": {
+        "blackAlpha100": "VariableID:38:520",
+        "blackAlpha72": "VariableID:38:521",
+        "blackAlpha60": "VariableID:38:522",
+        "blackAlpha36": "VariableID:38:523"
+      },
+      "themeModes": {
+        "dark": "16:1",
+        "light": "38:0"
+      }
+    },
+    "paintStyles": {
+      "count": 9,
+      "heroHalo": "S:454eba93ca1fb650a22309493843e822f8473c50,",
+      "sectionVeil": "S:ab86c57d439c70ee6665300c215d0990b23c603f,",
+      "brandFlow": "S:eddd044d9b494259863e3795e62ba116d463fce7,",
+      "textHighlight": "S:d9b40dc2e0a57c897671323e61948a0e96359b11,",
+      "lightHeroHalo": "S:ff22640308f94139fe4d6fc5261440e3db9e5423,",
+      "lightBrandMark": "S:84acd4b99e4bef1cae59bbd02fccfdd54eaaf48e,",
+      "lightHeadlineAccent": "S:e99a06c599e2bd7e154d938f326046d3fd29867e,",
+      "imageEdgeSoft": "S:45cbabc489f4afda56c977f126019692cc3d21b9,",
+      "imageEdgeStrong": "S:5630e1bd5313c316c9832fd3d58917d7d2d9f324,"
+    },
+    "textStyles": {
+      "count": 16
+    },
+    "pages": {
+      "foundations": "19:418"
+    },
+    "screens": {
+      "newHomepageDark": "1:292",
+      "newHomepageLight": "39:539"
+    },
+    "frames": {
+      "root": "19:419",
+      "intro": "19:420",
+      "principles": "19:421",
+      "primitives": "19:422",
+      "semantic": "19:423",
+      "gradients": "30:440",
+      "typography": "19:424"
+    }
+  },
+  "pendingValidations": [],
+  "completedSteps": [
+    "phase0",
+    "phase1",
+    "phase2",
+    "phase4",
+    "opacity-refinement",
+    "gradient-paint-styles",
+    "refinement-qa",
+    "dark-homepage-audit",
+    "light-mode-tokens",
+    "light-homepage-clone",
+    "light-homepage-normalization",
+    "homepage-theme-qa"
+  ]
+}

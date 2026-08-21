@@ -1,0 +1,98 @@
+.theme-demo-toggle {
+  position: fixed;
+  z-index: 300;
+  top: 82px;
+  right: max(18px, calc((100vw - 1440px) / 2 + 18px));
+  display: grid;
+  width: 158px;
+  min-height: 70px;
+  padding: 7px;
+  border: 2px solid #ff3672;
+  border-radius: 14px;
+  color: #fff;
+  background: #050506;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24), 0 0 0 4px rgba(255, 54, 114, 0.12);
+  cursor: pointer;
+  isolation: isolate;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.theme-demo-toggle:hover {
+  transform: translateY(-2px) rotate(0.5deg);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3), 0 0 0 6px rgba(255, 54, 114, 0.16);
+}
+
+.theme-demo-toggle:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.theme-demo-kicker {
+  margin-bottom: 5px;
+  color: #ff86aa;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1.4px;
+}
+
+.theme-demo-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+}
+
+.theme-demo-option {
+  display: grid;
+  height: 32px;
+  place-items: center;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 12px;
+  letter-spacing: 0.8px;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.theme-demo-option-dark {
+  color: #fff;
+  background: #050506;
+}
+
+.theme-demo-option-light {
+  color: #111113;
+  background: #fff;
+}
+
+html[data-theme="dark"] .theme-demo-option-dark,
+html[data-theme="light"] .theme-demo-option-light {
+  box-shadow: inset 0 -3px #ff3672;
+}
+
+html[data-theme="dark"] .theme-demo-option-light,
+html[data-theme="light"] .theme-demo-option-dark {
+  opacity: 0.44;
+}
+
+html[data-theme="light"] .theme-demo-toggle {
+  color: #111113;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(17, 17, 19, 0.16), 0 0 0 4px rgba(255, 54, 114, 0.1);
+}
+
+@media (max-width: 720px) {
+  .theme-demo-toggle {
+    top: auto;
+    right: 14px;
+    bottom: 14px;
+    width: 144px;
+    min-height: 64px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-demo-toggle,
+  .theme-demo-option {
+    transition: none;
+  }
+}

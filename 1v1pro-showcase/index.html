@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050506" />
+    <meta name="description" content="Start a live 1v1 video chat with real people from around the world." />
+    <title>1V1Pro - Real conversations, one person at a time</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("1v1pro-theme");
+          document.documentElement.dataset.theme = savedTheme === "light" ? "light" : "dark";
+        } catch {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260821-8" />
+    <link rel="stylesheet" href="theme-light.css?v=20260821" />
+    <link rel="stylesheet" href="theme-toggle.css" />
+    <script src="script.js?v=20260821-6" defer></script>
+    <script src="theme-toggle.js" defer></script>
+  </head>
+  <body>
+    <button class="theme-demo-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+      <span class="theme-demo-kicker">THEME DEMO</span>
+      <span class="theme-demo-switch" aria-hidden="true">
+        <span class="theme-demo-option theme-demo-option-dark">DARK</span>
+        <span class="theme-demo-option theme-demo-option-light">LIGHT</span>
+      </span>
+    </button>
+
+    <header class="site-header" data-node-id="214:13447">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="1V1Pro home">
+          <span class="brand-mark"><img src="assets/figma/imgGroup1355.svg" alt="" /></span>
+          <img class="brand-wordmark" src="assets/figma/img1V1Chat1.svg" alt="1V1Chat" />
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#people"><img src="assets/figma/imgUnion15.svg" alt="" />1V1 Chat</a>
+          <a href="#ways"><img src="assets/figma/imgUnion16.svg" alt="" />RandomChat</a>
+          <a href="#ways"><img src="assets/figma/imgUnion17.svg" alt="" />Text Chat</a>
+          <a href="#people"><img src="assets/figma/imgUnion18.svg" alt="" />Hot Live</a>
+          <a href="#conversation"><img src="assets/figma/imgUnion19.svg" alt="" />Global Games</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="coin-button" type="button" aria-label="Buy coins"><img src="assets/figma/imgUnion20.svg" alt="" /></button>
+          <a class="login-button" href="#cta">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene">
+          <div class="hero-ambient" aria-hidden="true">
+            <div class="hero-ambient-canvas">
+              <img class="hero-ambient-light hero-ambient-rose" src="assets/figma/ambient-glow-rose.svg" alt="" />
+              <img class="hero-ambient-light hero-ambient-magenta" src="assets/figma/ambient-glow-magenta.svg" alt="" />
+              <img class="hero-ambient-light hero-ambient-plum" src="assets/figma/ambient-glow-plum.svg" alt="" />
+              <img class="hero-ambient-light hero-ambient-pink" src="assets/figma/ambient-glow-pink.svg" alt="" />
+              <img class="hero-ambient-light hero-ambient-violet" src="assets/figma/ambient-glow-violet.svg" alt="" />
+            </div>
+          </div>
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              <span>Video Chat with Real People</span>
+              <span>One Conversation at a Time</span>
+            </h1>
+            <p>Start a live 1v1 video chat with real people from around the world. Meet someone new face to face, talk in real time, and discover where a simple conversation can lead.</p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#people"><span class="button-icon"><img src="assets/figma/imgGroup2147228523.svg" alt="" /></span>Start Video Chat</a>
+              <a class="secondary-button" href="#people">Explore People</a>
+            </div>
+            <div class="hero-proof" aria-label="Product highlights">
+              <span><img src="assets/figma/imgUnion2.svg" alt="" />1v1 Video Chat</span>
+              <i aria-hidden="true"></i>
+              <span><img src="assets/figma/imgGroup1035.svg" alt="" />Real People</span>
+              <i aria-hidden="true"></i>
+              <span><img src="assets/figma/imgUnion3.svg" alt="" />Real Conversations</span>
+            </div>
+          </div>
+          <div class="video-stage" aria-label="Video conversation preview">
+            <video class="video-main" muted playsinline loop preload="metadata" poster="assets/figma/imgImage3150.png" aria-label="A woman smiling during a video conversation">
+              <source src="assets/Harovide.webm" type="video/webm" />
+            </video>
+            <img class="video-self" src="assets/figma/imgRectangle2271.png" alt="Your camera preview" />
+            <div class="call-controls" aria-label="Call controls preview">
+              <span><img src="assets/figma/imgUnion4.svg" alt="Microphone" /></span>
+              <span class="end-call"><img src="assets/figma/imgGroup1038.svg" alt="End call" /></span>
+              <span><img src="assets/figma/imgUnion5.svg" alt="Camera" /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="people-section" id="people" aria-labelledby="people-title">
+        <div class="viewport-section-inner people-section-inner">
+        <div class="section-heading">
+          <span class="section-label">WAYS TO VIDEO CHAT</span>
+          <h2 id="people-title">Find the Video Chat<br />That Feels Right for You</h2>
+          <p>Every conversation can start differently. Meet someone through a private 1v1 video chat, discover people who are live right now, or break the ice before moving into a face-to-face call.</p>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Chat categories">
+          <button class="active" type="button" role="tab" aria-controls="people-panel" aria-selected="true" data-category="video"><img src="assets/figma/imgUnion6.svg" alt="" />Video chat</button>
+          <button type="button" role="tab" aria-controls="people-panel" aria-selected="false" data-category="live"><img src="assets/figma/imgSubtract.svg" alt="" />Live</button>
+          <button type="button" role="tab" aria-controls="people-panel" aria-selected="false" data-category="game"><img src="assets/figma/imgSubtract1.svg" alt="" />Game</button>
+        </div>
+
+        <div class="people-viewport" data-people-carousel>
+          <div class="people-scroller" tabindex="0" aria-label="Video chat people">
+            <div class="people-track" id="people-panel" role="tabpanel" aria-live="polite">
+              <article class="person-card" tabindex="0"><img src="assets/figma/imgCard.png" alt="John Smith" /><span class="status"><img src="assets/figma/imgGroup2147228530.svg" alt="" />online</span><span class="call-count">3.8k Call</span><a class="start-card" href="#cta"><img src="assets/figma/imgUnion1.svg" alt="" />Start Chat</a><div><strong>John Smith <span class="gender-icon"><img src="assets/figma/imgUnion.svg" alt="" /></span></strong><small><em>Game</em><em>Travel</em><em>Cute</em></small></div></article>
+              <article class="person-card" tabindex="0"><img src="assets/figma/imgCard1.png" alt="Amanda White" /><span class="status"><img src="assets/figma/imgGroup2147228530.svg" alt="" />online</span><span class="call-count">3.8k Call</span><a class="start-card" href="#cta"><img src="assets/figma/imgUnion1.svg" alt="" />Start Chat</a><div><strong>Amanda White <span class="gender-icon"><img src="assets/figma/imgUnion.svg" alt="" /></span></strong><small><em>Game</em><em>Travel</em><em>Cute</em></small></div></article>
+              <article class="person-card" tabindex="0"><img src="assets/figma/imgCard2.png" alt="Jennifer Lee" /><span class="status"><img src="assets/figma/imgGroup2147228530.svg" alt="" />online</span><span class="call-count">3.8k Call</span><a class="start-card" href="#cta"><img src="assets/figma/imgUnion1.svg" alt="" />Start Chat</a><div><strong>Jennifer Lee <span class="gender-icon"><img src="assets/figma/imgUnion.svg" alt="" /></span></strong><small><em>Game</em><em>Travel</em><em>Cute</em></small></div></article>
+              <article class="person-card" tabindex="0"><img src="assets/figma/imgCard3.png" alt="Jessica Martinez" /><span class="status"><img src="assets/figma/imgGroup2147228530.svg" alt="" />online</span><span class="call-count">3.8k Call</span><a class="start-card" href="#cta"><img src="assets/figma/imgUnion1.svg" alt="" />Start Chat</a><div><strong>Jessica Martinez <span class="gender-icon"><img src="assets/figma/imgUnion.svg" alt="" /></span></strong><small><em>Game</em><em>Travel</em><em>Cute</em></small></div></article>
+              <article class="person-card" tabindex="0"><img src="assets/figma/imgCard4.png" alt="Matthew Wilson" /><span class="status"><img src="assets/figma/imgGroup2147228530.svg" alt="" />online</span><span class="call-count">3.8k Call</span><a class="start-card" href="#cta"><img src="assets/figma/imgUnion1.svg" alt="" />Start Chat</a><div><strong>Matthew Wilson <span class="gender-icon"><img src="assets/figma/imgUnion.svg" alt="" /></span></strong><small><em>Game</em><em>Travel</em><em>Cute</em></small></div></article>
+              <article class="person-card" tabindex="0"><img src="assets/figma/imgCard5.png" alt="Daniel Kim" /><span class="status"><img src="assets/figma/imgGroup2147228530.svg" alt="" />online</span><span class="call-count">3.8k Call</span><a class="start-card" href="#cta"><img src="assets/figma/imgUnion1.svg" alt="" />Start Chat</a><div><strong>Daniel Kim <span class="gender-icon"><img src="assets/figma/imgUnion.svg" alt="" /></span></strong><small><em>Game</em><em>Travel</em><em>Cute</em></small></div></article>
+            </div>
+          </div>
+          <div class="people-edge people-edge-left" aria-hidden="true"></div>
+          <button class="people-arrow people-arrow-left" type="button" aria-label="Previous people"><img src="assets/figma/imgUnion7.svg" alt="" /></button>
+          <div class="people-edge people-edge-right" aria-hidden="true"></div>
+          <button class="people-arrow people-arrow-right" type="button" aria-label="Next people"><img src="assets/figma/imgUnion7.svg" alt="" /></button>
+        </div>
+        <a class="text-link" href="#ways">Explore more people <img src="assets/figma/imgUnion8.svg" alt="" /></a>
+        </div>
+      </section>
+
+      <section class="ways-section" id="ways" aria-labelledby="ways-title">
+        <div class="viewport-section-inner ways-section-inner">
+        <div class="section-heading">
+          <span class="section-label">YOUR WAY TO CHAT</span>
+          <h2 id="ways-title">Start with Video Chat<br />or Ease Into the Conversation</h2>
+          <p>Some people are ready to talk face to face right away. Others prefer a little more time. Start with live video, try a random video match, or begin with text before moving onto camera.</p>
+        </div>
+
+        <div class="ways-grid">
+          <article class="way-card"><span class="way-icon"><img src="assets/figma/imgUnion9.svg" alt="" /></span><div><h3>Random Video Chat</h3><p>Meet someone unexpected and start a spontaneous live video conversation.</p></div><a href="#cta">Random Chat <img src="assets/figma/imgUnion8.svg" alt="" /></a></article>
+          <article class="way-card"><span class="way-icon"><img src="assets/figma/imgUnion10.svg" alt="" /></span><div><h3>Text chat</h3><p>Break the ice with a message first, then switch to video when the conversation feels right.</p></div><a href="#cta">Text chat <img src="assets/figma/imgUnion8.svg" alt="" /></a></article>
+          <article class="way-card"><span class="way-icon"><img src="assets/figma/imgUnion11.svg" alt="" /></span><div><h3>Video chat</h3><p>Start a private one-on-one video call and talk face to face in real time.</p></div><a href="#cta">Video chat <img src="assets/figma/imgUnion8.svg" alt="" /></a></article>
+        </div>
+        </div>
+      </section>
+
+      <section class="world-section" aria-labelledby="world-title">
+        <div class="viewport-section-inner world-section-inner">
+        <div class="section-heading">
+          <span class="section-label">VIDEO CHAT WORLDWIDE</span>
+          <h2 id="world-title">Meet People from Around<br />the World on Video Chat</h2>
+          <p>A live video conversation can connect you with someone whose life looks completely different from yours. Meet people across countries, cultures, and time zones - all through simple one-on-one video chats.</p>
+        </div>
+
+        <div class="world-grid" aria-label="People from around the world">
+          <img class="world-bg world-bg-1" src="assets/figma/world-02.png" alt="" aria-hidden="true" />
+          <img class="world-bg world-bg-2" src="assets/figma/world-08.png" alt="" aria-hidden="true" />
+          <img class="world-bg world-bg-3" src="assets/figma/world-16.jpeg" alt="" aria-hidden="true" />
+          <img class="world-bg world-bg-4" src="assets/figma/world-18.png" alt="" aria-hidden="true" />
+          <img class="world-1" src="assets/figma/world-13.jpeg" alt="" />
+          <img class="world-2" src="assets/figma/world-12.png" alt="" />
+          <img class="world-3" src="assets/figma/world-14.jpeg" alt="" />
+          <img class="world-4" src="assets/figma/world-04.png" alt="" />
+          <img class="world-5" src="assets/figma/world-10.jpeg" alt="" />
+          <img class="world-6" src="assets/figma/world-03.jpeg" alt="" />
+          <img class="world-7" src="assets/figma/world-06.jpeg" alt="" />
+          <img class="world-8" src="assets/figma/world-11.jpeg" alt="" />
+          <img class="world-9" src="assets/figma/world-07.png" alt="" />
+          <img class="world-10" src="assets/figma/world-09.jpeg" alt="" />
+          <div class="world-message">New friends all over the world</div>
+          <img class="world-11" src="assets/figma/world-15.jpeg" alt="" />
+          <img class="world-12" src="assets/figma/world-01.jpeg" alt="" />
+          <img class="world-13" src="assets/figma/world-05.jpeg" alt="" />
+        </div>
+        </div>
+      </section>
+
+      <section class="conversation-section" id="conversation" aria-labelledby="conversation-title">
+        <div class="viewport-section-inner conversation-section-inner">
+        <div class="section-heading">
+          <span class="section-label">BETTER VIDEO CONVERSATIONS</span>
+          <h2 id="conversation-title">A Good Video Chat<br />Starts with Something Real</h2>
+          <p>You don't need the perfect opening line. Talk about a song you're listening to, somewhere you've travelled, a game you love, or something that happened today.</p>
+        </div>
+        <a class="round-button" href="#cta"><img src="assets/figma/imgUnion12.svg" alt="" />Find a conversation</a>
+        <div class="conversation-wall" data-conversation-wall aria-label="Real conversation moments">
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2278.png" alt="Portrait of a woman" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2281.png" alt="Portrait of a man outdoors" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2299.png" alt="Portrait of a bearded man" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2305.png" alt="Friends together outdoors" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2324.png" alt="Portrait of a man with glasses" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2300.png" alt="A person cooking at home" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2287.png" alt="A woman on a video call" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2330.png" alt="Portrait of a man wearing a cap" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2283.png" alt="Portrait of a woman in pink" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2297.png" alt="Friends taking a photo" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2324.png" alt="Portrait of a man with glasses" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2285.png" alt="Friends by the water" /></div>
+          <div class="conversation-tile"><img src="assets/figma/imgRectangle2281.png" alt="Portrait of a man outdoors" /></div>
+        </div>
+        </div>
+      </section>
+
+      <section class="steps-section" aria-labelledby="steps-title">
+        <div class="viewport-section-inner steps-section-inner">
+        <div class="section-heading compact">
+          <span class="section-label">HOW IT WORKS</span>
+          <h2 id="steps-title">Meet Someone <span>New in</span><br />Three Simple <span>Steps</span></h2>
+        </div>
+        <div class="steps-experience" data-steps-carousel>
+          <div class="steps-cards" data-step-cards role="list" aria-label="How video chat works">
+            <article class="step-card" data-step-item data-step-index="0" role="listitem" tabindex="0">
+              <div class="step-card-media" role="img" aria-label="Choose your preferences"></div>
+              <div class="step-card-copy">
+                <h3>01 Choose Your Preferences</h3>
+                <p>Select who you’d like to meet and the conversations you’re interested in.</p>
+              </div>
+            </article>
+            <article class="step-card" data-step-item data-step-index="1" role="listitem" tabindex="0">
+              <div class="step-card-media" role="img" aria-label="Find someone online"></div>
+              <div class="step-card-copy">
+                <h3>02 Get Matched</h3>
+                <p>We’ll connect you with someone who’s online and ready to talk.</p>
+              </div>
+            </article>
+            <article class="step-card" data-step-item data-step-index="2" role="listitem" tabindex="0">
+              <div class="step-card-media" role="img" aria-label="Start your video call"></div>
+              <div class="step-card-copy">
+                <h3>03 Start Talking</h3>
+                <p>Say hello face to face and see where the conversation takes you.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="viewport-section-inner faq-section-inner">
+        <div class="section-heading compact">
+          <span class="section-label">FAQ</span>
+          <h2 id="faq-title">Questions, answered</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary><span class="faq-question">What is online video chat?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <p>Online video chat lets two or more people communicate through live video and audio over the internet. On 1v1chat, the experience is built around meeting people and having real-time one-on-one conversations.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">What is 1v1 video chat?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <p>1v1 video chat is a private face-to-face conversation between two people. Instead of joining a group room, you can focus on one person and one conversation at a time.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">How do I start a video chat on 1v1chat?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <p>Choose someone you want to talk with, select video chat, and follow the on-screen steps to start your call.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Can I meet people from other countries through video chat?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <p>Yes. 1v1chat is designed for global conversations, so you can discover people from different countries, cultures, and backgrounds.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">What can I talk about in a video chat?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <p>Start with something simple: music, travel, hobbies, games, everyday life, or something you notice you have in common. Natural questions usually work better than trying to find the perfect opening line.</p>
+          </details>
+          <details>
+            <summary><span class="faq-question">Can I start with text before video?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <p>Yes. Text chat can make it easier to break the ice before deciding whether you want to continue face to face on video.</p>
+          </details>
+        </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="cta" aria-labelledby="cta-title">
+        <div class="cta-card">
+          <div class="avatar-cluster" aria-hidden="true">
+            <img class="avatar a1" src="assets/figma/imgEllipse502.png" alt="" />
+            <img class="avatar a2" src="assets/figma/imgEllipse504.png" alt="" />
+            <img class="avatar a3" src="assets/figma/imgEllipse505.png" alt="" />
+            <img class="avatar a4" src="assets/figma/imgEllipse506.png" alt="" />
+            <img class="avatar a5" src="assets/figma/imgEllipse503.png" alt="" />
+            <img class="orb o1" src="assets/figma/imgEllipse507.svg" alt="" />
+            <img class="orb o2" src="assets/figma/imgEllipse508.svg" alt="" />
+            <img class="center-ring r1" src="assets/figma/imgEllipse501.svg" alt="" />
+            <img class="center-ring r2" src="assets/figma/imgEllipse510.svg" alt="" />
+            <img class="center-ring r3" src="assets/figma/imgEllipse509.svg" alt="" />
+            <img class="center-video" src="assets/figma/imgUnion14.svg" alt="" />
+          </div>
+          <div class="cta-copy">
+            <span><img src="assets/figma/imgVector.svg" alt="" />YOUR NEXT CONVERSATION</span>
+            <h2 id="cta-title">Your Next Video Chat Could<br />Start with a Simple Hello</h2>
+            <p>Meet someone new, start a real conversation, and see where it goes.</p>
+          </div>
+          <a class="cta-button" href="#top">Start a 1V1 chat</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="1V1Pro home"><span class="brand-mark"><img src="assets/figma/imgGroup1354.svg" alt="" /></span><img class="brand-wordmark" src="assets/figma/img1V1Chat.svg" alt="1V1Chat" /></a>
+        <p>Real conversation, at your pace.</p>
+      </div>
+      <div class="footer-links"><div><strong>Connect</strong><a href="#top">Video chat</a><a href="#ways">Random chat</a><a href="#ways">Text chat</a></div><div><strong>Explore</strong><a href="#people">Live</a><a href="#conversation">Games</a><a href="#conversation">Themes</a></div><div><strong>Trust</strong><a href="#faq-title">Safety</a><a href="#faq-title">Privacy</a><a href="#faq-title">Community rules</a></div></div>
+      <div class="footer-bottom"><span>© 2026 1V1Pro. Adults only.</span><span>Terms&nbsp;&nbsp;&nbsp;&nbsp; Privacy&nbsp;&nbsp;&nbsp;&nbsp; Cookies</span></div>
+    </footer>
+  </body>
+</html>

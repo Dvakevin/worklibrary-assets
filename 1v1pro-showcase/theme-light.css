@@ -1,0 +1,302 @@
+/*
+ * Home-Desktop-light theme only.
+ * Delete this file and its <link> to remove the light demo without touching the dark site.
+ */
+html[data-theme="light"] {
+  color-scheme: light;
+  --canvas: #ffffff;
+  --surface: #fafafb;
+  --subtle: #ededf0;
+  --border: #d4d4d8;
+  --text: #111113;
+  --text-secondary: rgba(17, 17, 19, 0.72);
+  --text-tertiary: rgba(17, 17, 19, 0.6);
+  --text-faint: rgba(17, 17, 19, 0.48);
+  --pink: #ff5c8d;
+  --pink-soft: #d42463;
+  --pink-focus: #e83d74;
+  background: #ffffff;
+}
+
+html[data-theme="light"] body {
+  color: var(--text);
+  background: var(--canvas);
+}
+
+html[data-theme="light"] .site-header {
+  border-bottom-color: rgba(17, 17, 19, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 1px 0 rgba(17, 17, 19, 0.02);
+}
+
+html[data-theme="light"] .site-header .brand-wordmark,
+html[data-theme="light"] .site-header .main-nav img,
+html[data-theme="light"] .site-header .coin-button img {
+  filter: brightness(0) saturate(100%);
+}
+
+html[data-theme="light"] .main-nav a {
+  color: #111113;
+}
+
+html[data-theme="light"] .site-header .main-nav img {
+  opacity: 1;
+}
+
+html[data-theme="light"] .main-nav a:hover,
+html[data-theme="light"] .main-nav a:focus-visible {
+  color: #111113;
+  background: rgba(17, 17, 19, 0.045);
+}
+
+html[data-theme="light"] .coin-button {
+  border-color: #e4e4e7;
+  background: #fafafb;
+  box-shadow: 0 1px 2px rgba(17, 17, 19, 0.06);
+}
+
+html[data-theme="light"] main > section {
+  background: #ffffff;
+}
+
+html[data-theme="light"] .step-card-copy {
+  background: #ffffff;
+}
+
+html[data-theme="light"] .step-card {
+  border-color: #d4d4d8;
+  background: #ffffff;
+}
+
+html[data-theme="light"] .step-card-media::after {
+  opacity: 0;
+}
+
+@media (min-width: 1181px) {
+  html[data-theme="light"] .conversation-tile {
+    border-radius: 30px;
+    background: #ededf0;
+    box-shadow: 0 12px 30px rgba(17, 17, 19, 0.1);
+  }
+}
+
+@media (min-width: 1181px) {
+  html[data-theme="light"] .hero::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.46) 52%,
+      #ffffff 100%
+    );
+  }
+}
+
+html[data-theme="light"] .hero-ambient-canvas {
+  background-image:
+    url("assets/figma/light-glow-violet.svg"),
+    url("assets/figma/light-glow-rose.svg"),
+    url("assets/figma/light-glow-pink.svg"),
+    url("assets/figma/light-glow-blue.svg");
+  background-repeat: no-repeat;
+  background-position: -18% -24%, 108% -20%, 18% 74%, 87% 70%;
+  background-size:
+    max(72vw, 1120px) max(72vw, 1120px),
+    max(70vw, 1080px) max(70vw, 1080px),
+    max(68vw, 1040px) max(68vw, 1040px),
+    max(74vw, 1140px) max(74vw, 1140px);
+  animation: light-theme-ambient-drift 22s ease-in-out infinite alternate;
+}
+
+html[data-theme="light"] .hero-ambient-light {
+  display: none;
+}
+
+@keyframes light-theme-ambient-drift {
+  from { transform: translate3d(-1.5%, -1%, 0) scale(1.02); }
+  to { transform: translate3d(1.5%, 1%, 0) scale(1.05); }
+}
+
+html[data-theme="light"] .hero h1 span:last-child {
+  background-image: linear-gradient(107deg, #111113 62%, #ff005a 100%);
+}
+
+html[data-theme="light"] .section-heading h2 {
+  background-image: linear-gradient(107deg, #111113 62%, #ff6f98 100%);
+}
+
+html[data-theme="light"] .section-heading > p {
+  color: rgba(17, 17, 19, 0.6);
+}
+
+html[data-theme="light"] .login-button,
+html[data-theme="light"] .primary-button,
+html[data-theme="light"] .round-button,
+html[data-theme="light"] .cta-button {
+  color: #ffffff;
+}
+
+html[data-theme="light"] .secondary-button {
+  border-color: rgba(17, 17, 19, 0.06);
+  color: #111113;
+  background: rgba(216, 216, 216, 0.4);
+}
+
+html[data-theme="light"] .video-stage {
+  border-color: #e4e4e7;
+  box-shadow: 0 24px 70px rgba(86, 28, 63, 0.12);
+}
+
+html[data-theme="light"] .section-label {
+  color: #a9164a;
+}
+
+html[data-theme="light"] .filter-tabs button {
+  color: rgba(17, 17, 19, 0.65);
+  background: #f4f4f5;
+}
+
+html[data-theme="light"] .filter-tabs button:hover,
+html[data-theme="light"] .filter-tabs button:focus-visible {
+  color: #111113;
+  background: #e4e4e7;
+}
+
+html[data-theme="light"] .filter-tabs button.active {
+  color: #ffffff;
+  background: linear-gradient(109deg, #ff8cb3 2%, #ff5c8d 48%, #ff2269 98%);
+}
+
+html[data-theme="light"] .person-card,
+html[data-theme="light"] .person-card strong,
+html[data-theme="light"] .person-card em,
+html[data-theme="light"] .start-card {
+  color: #ffffff;
+}
+
+html[data-theme="light"] .filter-tabs img {
+  opacity: 0.62;
+  filter: brightness(0) saturate(100%);
+}
+
+html[data-theme="light"] .filter-tabs button.active img {
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+html[data-theme="light"] .people-edge-left {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0), #ffffff 82%);
+}
+
+html[data-theme="light"] .people-edge-right {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 82%);
+}
+
+html[data-theme="light"] .people-arrow {
+  border-color: #e4e4e7;
+  background: #f4f4f5;
+  box-shadow: 0 8px 24px rgba(17, 17, 19, 0.1);
+}
+
+html[data-theme="light"] .people-arrow:hover {
+  background: #e4e4e7;
+}
+
+html[data-theme="light"] .people-arrow img {
+  filter: brightness(0) saturate(100%);
+}
+
+html[data-theme="light"] .text-link {
+  color: #ff3672;
+}
+
+html[data-theme="light"] .way-card {
+  border-color: #d4d4d8;
+  background: linear-gradient(131deg, #fafafb 0%, #ffffff 67%);
+}
+
+html[data-theme="light"] .way-card::before {
+  background: linear-gradient(135deg, rgba(255, 92, 141, 0.14), rgba(255, 224, 234, 0.14) 58%, transparent 100%);
+}
+
+html[data-theme="light"] .way-card:focus-within p {
+  color: rgba(17, 17, 19, 0.66);
+}
+
+@media (hover: hover) {
+  html[data-theme="light"] .way-card:hover p {
+    color: rgba(17, 17, 19, 0.66);
+  }
+}
+
+html[data-theme="light"] .world-message {
+  border-color: #d4d4d8;
+  background: linear-gradient(156deg, #fafafb, #ffffff 67%);
+}
+
+html[data-theme="light"] .stack-card::before {
+  background: rgba(255, 255, 255, 0.48);
+}
+
+html[data-theme="light"] .stack-card::after {
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.94));
+}
+
+html[data-theme="light"] .stack-caption {
+  color: #111113;
+}
+
+html[data-theme="light"] .stack-caption small {
+  color: rgba(17, 17, 19, 0.72);
+}
+
+html[data-theme="light"] .step-track::before {
+  background: #d4d4d8;
+}
+
+html[data-theme="light"] .steps-visual {
+  border: 1px solid #e4e4e7;
+  background: #f4f4f5;
+}
+
+html[data-theme="light"] .faq-list details {
+  border-color: #e4e4e7;
+  background: linear-gradient(170deg, #fafafb, #ffffff 67%);
+}
+
+html[data-theme="light"] .faq-list details[open] {
+  border-color: rgba(232, 61, 116, 0.42);
+  background: #fafafb;
+}
+
+html[data-theme="light"] .cta-card {
+  border-color: #d4d4d8;
+  background:
+    radial-gradient(circle at 16% 50%, rgba(255, 92, 141, 0.07), transparent 28%),
+    linear-gradient(154deg, #fafafb, #ffffff 67%);
+}
+
+html[data-theme="light"] .cta-copy > span {
+  color: rgba(169, 22, 74, 0.7);
+}
+
+html[data-theme="light"] .cta-copy p {
+  color: rgba(17, 17, 19, 0.5);
+}
+
+/* The light Figma artboard deliberately keeps the footer as a dark closing block. */
+html[data-theme="light"] .site-footer {
+  --surface: #0b0b0d;
+  --subtle: #18181b;
+  --text: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.68);
+  --text-tertiary: rgba(255, 255, 255, 0.48);
+  color: var(--text);
+  border-top-color: #ffffff;
+  background: var(--surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="light"] .hero-ambient-canvas {
+    animation: none;
+  }
+}
