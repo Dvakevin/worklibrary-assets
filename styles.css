@@ -136,6 +136,7 @@ h2 { font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(30px, 4vw, 4
 .section-chip { padding: 7px 12px; border-radius: 999px; background: var(--surface-2); color: var(--muted); font-size: 12px; font-weight: 700; }
 .question-card { min-height: 470px; padding: clamp(26px, 5vw, 54px); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow); }
 .question-number { color: var(--accent); font-family: Georgia, serif; font-size: 18px; }
+.question-guide { margin-left: 12px; color: var(--muted); font-size: 12px; font-weight: 650; }
 .question-card h1 { max-width: 720px; margin: 24px 0 48px; font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(28px, 4.4vw, 44px); line-height: 1.35; letter-spacing: -.025em; }
 .scale-labels { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; font-weight: 700; }
 .answer-scale { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-top: 12px; }
