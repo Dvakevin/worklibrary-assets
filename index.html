@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f4ed" />
+    <meta name="description" content="一份基于荣格类型偏好的 56 题人格倾向测试，提供四维度分数与详细解读。" />
+    <title>棱镜 · 人格倾向测试</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">跳到主要内容</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="棱镜人格测试首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 3 28 10v12l-12 7L4 22V10l12-7Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="m4 10 12 7 12-7M16 17v12" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="16" cy="11" r="3" fill="currentColor"/>
+            </svg>
+          </span>
+          <span>棱镜 <small>PRISM</small></span>
+        </a>
+        <div class="topbar-actions">
+          <button class="text-button" id="methodButton" type="button">测试说明</button>
+          <button class="icon-button" id="themeButton" type="button" aria-label="切换深浅色主题" aria-pressed="false">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1"></main>
+
+      <footer class="footer">
+        <span>© 2026 棱镜人格实验室</span>
+        <span>仅用于自我探索，不用于临床诊断或人员筛选</span>
+      </footer>
+    </div>
+
+    <dialog class="info-dialog" id="methodDialog" aria-labelledby="methodTitle">
+      <div class="dialog-head">
+        <div>
+          <span class="eyebrow">HOW IT WORKS</span>
+          <h2 id="methodTitle">测试是怎样计分的？</h2>
+        </div>
+        <button class="icon-button" id="closeMethodButton" type="button" aria-label="关闭说明">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <div class="method-step"><span>01</span><div><h3>四个独立维度</h3><p>分别衡量精力来源、信息获取、决策方式与生活节奏。类型字母只是四个连续分数的简写。</p></div></div>
+        <div class="method-step"><span>02</span><div><h3>平衡题目方向</h3><p>每个维度包含 14 道题，两端陈述数量相同，并混合排列，以减少一味同意造成的偏差。</p></div></div>
+        <div class="method-step"><span>03</span><div><h3>显示倾向，不贴标签</h3><p>结果会同时展示百分比与倾向清晰度。接近 50% 表示偏好较灵活，不代表“没有性格”。</p></div></div>
+        <div class="note-box"><strong>重要说明</strong><p>本测试受荣格类型理论与 MBTI® 四维框架启发，但不是 The Myers-Briggs Company 的官方 MBTI® 测评。人格会受情境、角色和人生阶段影响，请把结果当作自我观察的起点。</p></div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
