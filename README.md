@@ -6,6 +6,12 @@
 
 直接双击 `index.html`，或在本目录启动任意静态文件服务器后访问即可。
 
+## Cloudflare Pages 部署
+
+- 构建命令：`npm run build`
+- 构建输出目录：`dist`
+- 根目录：仓库根目录
+
 ## 测评边界
 
 本站受荣格类型理论与 MBTI® 四维框架启发，但不是官方 MBTI® 测评，也不用于临床诊断、招聘筛选或替代专业心理评估。MBTI® 是 The Myers-Briggs Company 的注册商标。
